@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Pedro Rodrigues</title>
     <link rel="stylesheet" href="estilo.css">
@@ -11,138 +12,22 @@
 
     <Style>
 
-        html{
-            scroll-behavior: smooth;
-        }
-
-        
-        body{
-            background-color: rgb(21, 145, 145);
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        
-        #foto{
-            
-            display:flex;
-            margin: 0px auto;
-            padding-top: 100px;
-            
-    
-            
-        }
-
-        #nome{
-            
-            width: auto;
-            position:absolute;
-            margin-top: -10px;
-            margin-left: 450px;
-            font-size: 20pt;
-            
-        
-            
-        }
-
-        #menu-h{
-        
-        
-        position:sticky;
-        top: 0;
-        margin-inline: 1px;
-        margin-top: 150px;
-        padding: 10px;
-        color: rgb(0, 0, 0);
-        font-weight: bold;
-        
-        
-        }
-
-        #menu-h li{
-            
-            
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 14pt;
-            font-style: italic;
-            display: inline;
-            padding-inline: 140px;
-            align-items: center;
-            margin-left: auto;
-            margin-right: auto;
-            
-            
-         
-            }
-
-
-            #menu-h li:hover {
-
-
-                border-radius: 50px;
-                margin: auto;
-                box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.674);
-
-            }
-
-        #biografia{
-
-           
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            margin-top: 100px;
-            padding-left: 5%;
-            padding-right: 5%;
-            text-align:justify;
-            font-size: 16pt;
-            
-
-
-            
-        }
-
-        #certificados{
-
-            display: flex;
-            color: aliceblue;
-            flex-direction: row;
-            align-items: center;
-            padding-top: 50px;
-            margin-top: 100px;
-            padding-inline: 100px;
-           
-            
-        }
-
-
-        #cargopref{
-
-            font-family: Arial, Helvetica, sans-serif;
-            color:aliceblue;
-            font-size: 14pt;
-            display: flex; 
-            margin-left: 25px; 
-            text-align: justify; 
-            margin-right: 10px; 
-            padding-right: 5px; 
-            padding-left: 5px;
-            
+html {
+    scroll-behavior: smooth;
+}
 
 
 
-        }
+</style>
 
        
-       
-
-       
-        
 
 
 
 
 
 
-    </Style>
+
 
 
 
@@ -152,6 +37,12 @@
 
 
 <body name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
 
     <style id="fundo">
         body {
@@ -164,10 +55,10 @@
 
 
 
-    <section>
+    <section class="foto">
 
         <div id="img">
-        <img id="foto" width=250px, height=250px, src="Pedro Rodrigues.jpg" alt="Foto de perfil">
+        <img id="foto" src="Pedro Rodrigues.jpg" alt="Foto de perfil">
         </div>
     
         <div id="nome">
@@ -175,12 +66,12 @@
         </div>
 
     
-   
+    </section>
     <ul id="menu-h">
         <li><a style="color: rgb(255, 255, 255); text-decoration: none;" href="#img">Inicio</a></li>
-        <li><a style="color: rgb(255, 255, 255); text-decoration: none;" href="#certificados">Certificações</a></li>
+        <li><a style="color: rgb(255, 255, 255); text-decoration: none;" href="#certs">Certificações</a></li>
         <li><a style="color: rgb(255, 255, 255); text-decoration: none;" href="#experiencias">Experiencia</a></li>
-        <li><a style="color: rgb(255, 255, 255); text-decoration: none;" href="contato.html">Contato</a></li>
+        <li><a style="color: rgb(255, 255, 255); text-decoration: none;" href="#contato">Contato</a></li>
 
 
     </ul>
@@ -189,72 +80,47 @@
 
     <h1 id="biografia" style="color: aliceblue;" >
 
-        <p>Me chamo Pedro Rodrigues, tenho 22 anos, sou papai da Laura e da Ariela.
-        Nascido na cidade de Cruz Alta, interior do estado do Rio Grande do Sul, sempre fui
-        um amante de tecnologia e inovação. Aos 15 anos de idade morando na cidade Dourados no 
-        estado de Mato grosso do Sul surgiu o interesse pela informática e eletronica. Comecei 
-        a desmontar e montar diversas vezes um computador velho que usava para jogar jogos como
-        Euro Truck Simulator dentre outros jogos da época. O tempo foi passando e o amor pela informática
-        foi só aumentando, porém ao terminar o Ensino Médio morava em uma cidade do interior e tive de 
-        escolher outro curso para graduar já que iria de onibus para a faculdade no periodo noturno.
+        <p>
+            Pedro Rodrigues, 22 anos, pai da Laura e da Ariela, nasceu em Cruz Alta, RS, 
+            e desde jovem nutre paixão por tecnologia. Aos 15 anos, em Dourados, MS, 
+            seu interesse por informática e eletrônica despertou ao desmontar e montar 
+            repetidamente um computador antigo usado para jogos. Após concluir o Ensino Médio, 
+            mudou-se para uma cidade do interior e, enquanto cursava outra graduação, 
+            estagiou na Prefeitura de Bandeirantes, MS, assumindo responsabilidades gerais na 
+            área de T.I. após a saída de seu supervisor.
         </p>
 
 
         <p>
-        Nesta época estágiava na Prefeitura Municipal de Bandeirantes, MS , local onde adquiri parte
-        de minha experiencia profissional. Fui contratado como estágiario da T.I sendo supervisionado
-        por outro rapaz chamado Wesley, mas o mesmo se desligou do trabalho 3 meses depois e tive de 
-        operar completamente sozinho toda a area de tecnologia e infraestrutura de redes da Prefeitura
-        sendo responsavel por cuidar do prédio principal e de todos os prédios externos que pertenciam
-        a prefeitura na época. Fiquei responsável por toda a demanda de consertos e atualizações de HW
-        e também por fazer o monitoramenro e gerenciamento da rede fisica e logica, aprendendo a 
-        monitorar a rede usando um Microtik RB750.  
+            Após 1 ano e 9 meses, Pedro abriu sua própria empresa, a PH Informática, 
+            mas devido à localização em uma cidade do interior, não obteve resultados expressivos. 
+            Em 2020, aceitou o desafio de ajudar seu irmão no plantio de soja em Paragominas, PA. 
+            No ano seguinte, tentou se candidatar a vagas de T.I., sem sucesso, até que uma oportunidade na 
+            Diebold Nixdorf como Técnico Eletrônico de Campo surgiu. Durante 1 ano e 8 meses, 
+            Pedro desempenhou um papel fundamental, realizando manutenção em caixas eletrônicos e equipamentos eletrônicos.
         </p>
-
+        
 
         <p>
-        Após 1 ano e 9 meses decidi sair para tentar algo diferente, e foi ai que abri meu próprio negócio
-        a PH Informática, que foi fundada em 2020 porém não obteve resultados significativos por se 
-        tratar de uma cidade do interior do mato grosso do sul. No mesmo ano aceitei um desafio 
-        de vir embora para a cidade de Paragominas, Pará, para ajudar meu irmão no plantio de soja. 
+            Em julho de 2023, Pedro ingressou na Sojal Agro como Analista de Redes, 
+            responsável pela infraestrutura e implementação de processos conforme a LGPD. 
+            Atuou na instalação e manutenção de servidores com VMware, monitoramento de rede
+            com Zabbix e Grafana, além de atender incidentes de Hardware e Software onde atua no momento.
         </p>
-
+        
 
         <p>
-        Em 2021 parei de ajudar meu irmão na Lavoura e decidi me candidatar em algumas vagas de T.I 
-        que apareceram por perto mas nao obtive exito em nenhuma, até que surgiu uma vaga de Tecnico
-        Eletronico de Campo na Diebold Nixdorf, mesmo sem preencher os requisitos me candidatei e confiei
-        que Deus teria os melhores planos para mim e me guiaria no meu futuro profissional e pessoal.
-        Passei nas entrevistas e fui contratado pela Diebold Nixdorf como Tecnico residente de Paragominas,
-        cargo que cumpri durante 1 ano e 8 meses, obtive o certificado de conclusão de curso e me formei 
-        como eletrotecnico pela faspec. Era responsael pela manutenção preventiva e corretiva
-        de caixas eletronicos, equipamentos eletronicos, computadores e circuitos ao qual a empresa
-        tinha instalado em seus clientes.Entrei sem nenhuma experiencia profissional e sai com uma enorme
-        gratidão aos meus gestores e colegas ao qual desempenharam papeis fundamentais para meu crescimento
-        profissional dentro da empresa.
-        </p>
-
-
-        <p>
-        Em julho de 2023 iniciei na Sojal Agro como analista de redes responsavel por toda a demanda da area 
-        de tecnologia da informação e infraestrutura. Responsavel pela implantação de processos de acordo
-        com a LGPD, responsavel pela instalação e manutenção de servidores com VMware, monitoramento
-        de rede com zabbix e grafana, responsavel por atender incidentes de Hardware e Software via
-        acesso remoto e/ou presencialmente.
-        </p>
-
-
-        <p>
-        Hoje faço estudos em areas de tecnologia da informação a fim de me especializar como analista
-        de redes e como programador Front-End, aguardando uma oportunidade de participar em algum projeto
-        externo para melhorar minhas habilidades e adquirir conhecimentos reais sobre Front-End.
+            Atualmente, Pedro continua seus estudos em tecnologia da informação, 
+            buscando especialização como analista de redes e programador Front-End. 
+            Ele aguarda oportunidades para participar de projetos externos e aprimorar 
+            suas habilidades práticas em Front-End.
         </p>
 
     </h1>
 
 
-    <div>
-        <h1 style="font-size: xx-large; text-align: center; margin-top: 150px; font-size: 50px; font-family: Arial, Helvetica, sans-serif; color: aliceblue;">
+    <div >
+        <h1 id="certs">
         Certificações
         </h1>
     </div>
@@ -263,107 +129,106 @@
 
 
 
+    <section id="certificados">
+    
+    <div class="content">
+        <div  class="slides">
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+            <input type="radio" name="slide" id="slide4">
+            <input type="radio" name="slide" id="slide5">
+            <input type="radio" name="slide" id="slide6">   
 
 
-    <div id="certificados">
+            <div class="slide s1">
 
+                <a href="https://1drv.ms/b/s!Ag3vcPsbism86Rd2nAM-o8JAZIUB?e=OqRabM" target="_blank">
 
-        <div>
-            <a href="https://1drv.ms/b/s!Ag3vcPsbism86Rd2nAM-o8JAZIUB?e=OqRabM" target="_blank">
+                    <img style="width: 20vw; height: 20vw;" src="faspeclogo.png" alt="faspec">
+            
+                </a>
+                
+            </div>
 
-                <img width="100" height="100" style="padding-inline: 60px;" src="faspeclogo.png" alt="faspec">
-        
-            </a>
+            <div class="slide">
 
-            <p1 style="display: flex; flex-direction: column; margin-left: 65px; font-weight: bold;">
-                Eletrotecnica
-            </p1>
+                <a href="https://www.credly.com/badges/ac61f6b2-ce74-4b4c-a1d7-d0b1308240fc/linked_in_profile" target="_blank">
+
+                    <img style="width: 20vw; height: 20vw;" src="ciscologo1.png" alt="ciscologo">
+            
+                </a>
+
+            </div>
+
+            <div class="slide">
+
+                <a href="https://www.credly.com/badges/73163f2d-db3d-4bb1-a62d-1795c76becca/linked_in_profile" target="_blank">
+
+                    <img style="width: 20vw; height: 20vw;" src="ciscologo2.png" alt="ciscologo">
+            
+                </a>
+
+            </div>
+
+            <div class="slide">
+
+                <a href="https://www.credly.com/badges/dee52b5c-f8b6-445d-a669-f4eb3f5bcf69/linked_in_profile" target="_blank">
+
+                    <img style="width: 20vw; height: 20vw;" src="ciscologo3.png" alt="ciscologo">
+            
+                </a>
+
+            </div>
+
+            <div class="slide">
+
+                <a href="https://www.udemy.com/certificate/UC-082837ba-09f9-44ca-bc90-54115e339062/" target="_blank">
+
+                    <img style="width: 20vw; height: 20vw;" src="VMware 6.X.png" alt="udemylogo">
+            
+                </a>
+
+            </div>
+
+            <div class="slide">
+
+                <a href="https://www.udemy.com/certificate/UC-936e0c39-2535-4f0b-8afb-7477a4a3dec6/" target="_blank">
+
+                    <img style="width: 20vw; height: 20vw;" src="ninjapfsense.png" alt="udemylogo">
+            
+                </a>
+
+            </div>
+            <label class="bar" for="slide1"></label>
+                    <label class="bar" for="slide2"></label>
+                    <label class="bar" for="slide3"></label>
+                    <label class="bar" for="slide4"></label>
+                    <label class="bar" for="slide5"></label>
+                    <label class="bar" for="slide6"></label>
+
         </div>
-
-
-
-        <div>
-            <a href="https://www.credly.com/badges/ac61f6b2-ce74-4b4c-a1d7-d0b1308240fc/linked_in_profile" target="_blank">
-
-                <img style="padding-inline: 60px;" src="ciscologo.jpg" alt="ciscologo">
-        
-            </a>
-
-            <p1 style="display: flex; flex-direction: column; margin-left: 20px; font-weight: bold;">
-                Network Support and Security
-            </p1>
-        </div>
-        
-
-
-
-        <div>
-            <a href="https://www.credly.com/badges/73163f2d-db3d-4bb1-a62d-1795c76becca/linked_in_profile" target="_blank">
-
-                <img style="padding-inline: 60px;" src="ciscologo.jpg" alt="ciscologo">
-        
-            </a>
-
-            <p1 style="display: flex; flex-direction: column; margin-left: 15px; font-weight: bold;">
-                Network Technician Career Path
-            </p1>
-        </div>
-
-
-        <div>
-            <a href="https://www.credly.com/badges/dee52b5c-f8b6-445d-a669-f4eb3f5bcf69/linked_in_profile" target="_blank">
-
-                <img style="padding-inline: 60px;" src="ciscologo.jpg" alt="ciscologo">
-        
-            </a>
-
-            <p1 style="display: flex; flex-direction: column; margin-left: 60px; font-weight: bold;">
-                Network Basics
-            </p1>
-        </div>
-
-
-
-        <div>
-            <a href="https://www.udemy.com/certificate/UC-082837ba-09f9-44ca-bc90-54115e339062/" target="_blank">
-
-                <img style="padding-inline: 60px;" src="udemylogo.jpg" alt="udemylogo">
-        
-            </a>
-
-            <p1 style="display: flex; flex-direction: column; margin-left: -20px; font-weight: bold;">
-                Certificação de Profissional VMware 6
-            </p1>
-        </div>
-
-
-
-        <div>
-            <a href="https://www.udemy.com/certificate/UC-936e0c39-2535-4f0b-8afb-7477a4a3dec6/" target="_blank">
-
-                <img style="padding-inline: 60px;" src="udemylogo.jpg" alt="udemylogo">
-        
-            </a>
-
-            <p1 style="display: flex; flex-direction: column; margin-left: 88px; font-weight: bold;">
-                Pfsense
-            </p1>
-        </div>
-        
-
-
-
-
-
+      
+                    <!-- Botões de Avançar e Retornar -->
+                <button id="anterior" onclick="prevSlide()"></button>
+                <button id="proximo" onclick="nextSlide()"></button>
     </div>
 
+    
+</section>
 
+
+<div>
+    <p id="acessarcerts">
+        Clique para acessar o certificado!
+    </p>
+</div>
     <section id="experiencias">
 
 
 
-        <div style="display: flex; margin-left: 100px; padding-top: 200px;">
-            <img style="display: flex; width: 300px; height: 200px;" src="prefeituralogo.jpg" alt="prefeituralogo">
+        <div style="display: flex; margin-left: 100px; padding-top: 200px; margin-left: 5%;">
+            <img style="display: flex; width: 20%; height: 20%;" src="prefeituralogo.jpg" alt="prefeituralogo">
             <h1 id="cargopref">
                 Estágiario encarregado do setor de tecnologia da informação - Responsavel por toda a demanda do setor
                 dentre elas realizar manutenções periodicas de Hardware e Software em equipamentos de uso da mesma,
@@ -375,8 +240,8 @@
         </div>
 
 
-        <div style="display: flex; margin-left: 100px; padding-top: 200px;">
-            <img style="display: flex; width: 300px; height: 200px; background-color: aliceblue;" src="dnlogo.png" alt="dnlogo">
+        <div style="display: flex; margin-left: 100px; padding-top: 200px; margin-left: 5%;">
+            <img style="display: flex; width: 20%; height: 20%; background-color: aliceblue;" src="dnlogo.png" alt="dnlogo">
             <h1 id="cargopref">
                 Tecnico Eletronico de Campo - Atuar em ocorrencias de incidentes e chamados corretivos
                 ou preventivos em clientes especificos, realizar troca de peças e/ou concerto de 
@@ -388,8 +253,8 @@
         </div>
 
 
-        <div style="display: flex; margin-left: 100px; padding-top: 200px;">
-            <img style="display: flex; width: 300px; height: 300px;" src="logosojal.png" alt="logosojal">
+        <div style="display: flex; margin-left: 100px; padding-top: 200px; margin-left: 5%" >
+            <img style= "display: flex; width: 20%; height: 20%;" src="logosojal.png" alt="logosojal">
             <h1 id="cargopref">
                 Analista de redes - Responsável por toda a demanda da tecnologia da informação , analise de 
                 sistemas e monitoramento de firewall, suporte ao ERP Agribusiness, monitoramento e estruturação 
@@ -405,21 +270,27 @@
         </section>
 
 
+
+        <div id="contato">
+            <h1>
+            Contato
+            </h1>
+        </div>
         
 
         
             
-            <div id="email" style="display: flex; margin-top: 150px; margin-left: 450px; padding-top: 100px;">
+            <div id="logocontato">
                                     
                 <a href="mailto:pedrobortolini09@outlook.com?subject=Assunto do Email&body=Corpo do Email" target="_blank">
-                    <img style="width: 180px; height: 100px;" src="OutlookLogo.png" alt="logooutlook">
+                    <img style="width: 100%; height: 3vw;" src="OutlookLogo.png" alt="logooutlook">
                 </a>
             
         
                            
 
                 <a href="https://api.whatsapp.com/send?phone=5591991584392&text=Olá, Ainda restam vagas para hoje?" target="_blank">
-                <img style="width: 100px; height: 100px; padding-left: 100px;" src="whatsapp.png" alt="icone whatsapp">
+                <img style="width: 100%; height: 3vw;" src="whatsapp.png" alt="icone whatsapp">
                 </a>
                             
                         
@@ -427,33 +298,32 @@
                               
                                     
                 <a href="https://www.linkedin.com/in/pedro-henrique-b-24b672134/" target="_blank">
-                <img style="width: 100px; height: 100px; padding-left: 100px;" src="linkedin.png" alt="logolinkedin">
+                <img style="width: 100%; height: 3vw; padding-left: 40%;" src="linkedin.png" alt="logolinkedin">
                 </a>
                                     
             </div>
                                     
             
         
-            <p>&copy; 2024 Pedro Rodrigues, Todos os direitos reservados.</p>
-
-
-
-
-       
-
-
-
-
-
-    
-
-
-
+            <p style="display: flex; color: aliceblue; align-items: center; text-align: center; padding-top: 15vw; font-size: 2vw ; margin-left: 5vw; width: auto;
+            ">&copy; 2024 Pedro Rodrigues, Todos os direitos reservados.</p>
 
         
     </section>
 
-    <script src="script.js"></script>
+    
+        
+    <div class="musicplayer">
+        <audio autoplay controls src="El Bombón_Los Palmares.mp3"></audio>
+    </div>
+    
+
+    <script src="script.js">
+
+
+
+
+    </script>
     
 </body>
 </html>

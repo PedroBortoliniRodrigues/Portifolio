@@ -1,0 +1,252 @@
+#bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+}
+
+
+
+
+body {
+    background-color: rgb(21, 145, 145);
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px; /* Definindo uma fonte base responsiva */
+}
+
+#foto {
+ 
+
+    align-items: center;
+    width: auto;
+    display:flex;
+    margin-left: 40vw;
+    padding-top: 5vw; /* Ajustando para uma unidade responsiva */
+    border-radius: 10%;
+    width: min(250px, 25vw);
+    
+   
+   }
+
+#nome {
+    font-family: 'calibri light', Times, serif;
+    width: auto;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 32%; /* Ajustando para uma unidade responsiva */
+    font-size: 2vw; /* Ajustando para uma unidade responsiva */
+}
+
+#menu-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    margin-top: 15%;
+    padding: 1vw 0; /* Ajustando para uma unidade responsiva */
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background-color: black;
+    width: 100%; /* Ocupa a largura total da página */
+}
+
+#menu-h li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vw;
+    font-style: italic;
+    padding-inline: 6vw;
+}
+
+/* Se quiser remover o margin-left: 10vw, pois agora o menu é centralizado, ajuste conforme necessário. */
+
+#biografia {
+    font-family: 'calibri light', Times, serif;
+    margin-top: 5vw; /* Ajustando para uma unidade responsiva */
+    padding-left: 5vw; /* Ajustando para uma unidade responsiva */
+    padding-right: 5vw; /* Ajustando para uma unidade responsiva */
+    text-align: justify;
+    font-size: 1.6vw; /* Ajustando para uma unidade responsiva */
+    background-color: #4d4d4d;
+    border-radius: 2vw;
+    
+}
+
+#certificados {
+    display: flex;
+    justify-content: center;
+    margin-left: 50vw;
+    margin-top: 2vw;
+}
+
+.content {
+    margin-top: 10vw; /* Ajustado para uma unidade responsiva */
+    height: 20vw; /* Ajustado para uma unidade responsiva */
+    width: 20vw; /* Ajustado para uma unidade responsiva */
+    border-radius: 5vw; /* Ajustado para uma unidade responsiva */
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+/* Estilos dos botões de navegação */
+#anterior {
+    position: absolute;
+    top: 50%;
+    left: 1vw;
+    transform: translateY(-50%);
+    padding: 0.8vw; /* Alterado para uma unidade responsiva (viewport width) */
+    border-radius: 0.8vw;
+    background-color: #000000;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+#proximo {
+    position: absolute;
+    top: 50%;
+    right: 1vw; /* Alterado para right para posicionar à direita */
+    transform: translateY(-50%);
+    padding: 0.8vw; /* Alterado para uma unidade responsiva (viewport width) */
+    border-radius: 0.8vw;
+    color: #000000;
+    background-color: #000000;
+    border: none;
+    cursor: pointer;
+    
+}
+
+
+
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 600%;
+    height: 100%;
+}
+
+.slide {
+    width: 20vw;
+    transition: 0.6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -16.66%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -33.32%;
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -49.98%;
+}
+
+#slide5:checked ~ .s1 {
+    margin-left: -66.64%;
+}
+
+#slide6:checked ~ .s1 {
+    margin-left: -83.3%;
+}
+
+
+
+#cargopref {
+    font-family: 'calibri light', Times, serif;
+    color: aliceblue;
+    font-size: 1.4vw; /* Ajustando para uma unidade responsiva */
+    display: flex;
+    margin-left: 2.5vw; /* Ajustando para uma unidade responsiva */
+    text-align: justify;
+    margin-right: 1vw; /* Ajustando para uma unidade responsiva */
+    padding-right: 1vw; /* Ajustando para uma unidade responsiva */
+    padding-left: 1vw; /* Ajustando para uma unidade responsiva */
+    background-color: #4d4d4d;
+    border-radius: 1vw;
+    padding-top: 1.5vw;
+}
+
+.foto {
+    width: max(60vh);
+    height: auto;
+    justify-content: center;
+   
+    
+   
+}
+
+#certs{
+
+    
+    font-size: 3vw; /* Ajustando para uma unidade responsiva */
+    text-align: center;
+    margin-top: 10%; /* Ajustando para uma unidade responsiva */
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    margin-left: 40vw;
+
+
+}
+
+#acessarcerts{
+
+    font-size: 2vw; /* Ajustando para uma unidade responsiva */
+    text-align: center;
+    margin-top: -10%; /* Ajustando para uma unidade responsiva */
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    margin-left: 35vw;
+}
+
+
+#contato{
+
+    font-size: xx-large;
+    margin-left: 43% ;
+    text-align: center; 
+    margin-top: 25vw; 
+    font-size: 2vw; 
+    font-family: Arial, Helvetica, sans-serif; 
+    color: aliceblue;
+
+
+}
+
+#logocontato{
+
+    display: flex; 
+    margin-top: 5%; 
+    margin-left: 45%;
+   
+    
+
+}
+
+.musicplayer{
+
+    align-items: center;
+    width: auto;
+    display:flex;
+    margin-left: 40vw;
+    padding-top: 5vw; /* Ajustando para uma unidade responsiva */
+    border-radius: 10%;
+    width: min(250px, 25vw);
+    
+}

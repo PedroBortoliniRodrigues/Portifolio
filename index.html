@@ -20,28 +20,9 @@ html {
 
 </style>
 
-       
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <body name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
-
-
 
 
     <style id="fundo">
@@ -64,7 +45,9 @@ html {
         <div id="nome">
         <h1 style="color: rgb(255, 255, 255);" >Pedro Henrique Bortolini Rodrigues</h1>
         </div>
+        
 
+        
     
     </section>
     <ul id="menu-h">
@@ -76,6 +59,38 @@ html {
 
     </ul>
 
+
+
+    <section class="weather-container">
+        <h2 id="previsaodotempo">Previsão do Tempo</h2>
+        <form id="weatherForm">
+          <label for="cityInput">Digite o nome da cidade: </label>
+          <textarea type="text" id="cityInput" required></textarea>
+          <button type="submit">Obter Previsão</button>
+        </form>
+        <div id="loading">Carregando...</div>
+        <div id="city"></div>
+        <div id="temperature"></div>
+        <div id="description"></div>
+    </section>
+
+
+
+
+    <div id="clock-container">
+        <label for="timezone">Selecione o Fuso Horário:</label>
+        <select id="timezone" onchange="updateClock()">
+          <option value="America/Sao_Paulo">Sao Paulo</option>
+          <option value="America/Rio_Branco">Rio Branco</option>
+          <option value="America/New_York">Nova Iorque</option>
+          <option value="Europe/London">Londres</option>
+          <option value="Europe/Berlin">Berlim</option>
+          <option value="Asia/Tokyo">Tóquio</option>
+          <!-- Adicione mais opções de fuso horário conforme necessário -->
+        </select>
+    
+        <div id="clock" class="clock"></div>
+    </div>
     
 
     <h1 id="biografia" style="color: aliceblue;" >
@@ -278,6 +293,23 @@ html {
         </div>
         
 
+        <section class="container">
+            <form id="contactForm">
+              <h1>Formulário de Contato</h1>
+        
+              <label for="nameformulario">Digite seu Nome:</label>
+              <input type="text" class="nomeform" type="text" id="name" name="name" required>
+
+              <label for="email">Email:</label>
+              <input type="email" class="emailform" type="email" id="email" name="email" required>
+        
+              <label for="message">Mensagem:</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+        
+              <button type="submit" onclick="submitForm()">Enviar</button>
+            </form>
+        </section>
+        
         
             
             <div id="logocontato">
@@ -305,7 +337,7 @@ html {
                                     
             
         
-            <p style="display: flex; color: aliceblue; align-items: center; text-align: center; padding-top: 15vw; font-size: 2vw ; margin-left: 5vw; width: auto;
+            <p style="display: flex; color: aliceblue; align-items: center; text-align: center; padding-top: 15vw; font-size: 2vw ; margin-left: 28vw; width: auto;
             ">&copy; 2024 Pedro Rodrigues, Todos os direitos reservados.</p>
 
         
@@ -313,17 +345,20 @@ html {
 
     
         
-    <div class="musicplayer">
-        <audio autoplay controls src="El Bombón_Los Palmares.mp3"></audio>
+    <div class="music-player">
+        
+        <audio controls>
+            <source src="El Bombón_Los Palmares.mp3" type="audio/mp3">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
     </div>
     
 
     <script src="script.js">
-
-
-
+    
 
     </script>
-    
+
+        
 </body>
 </html>

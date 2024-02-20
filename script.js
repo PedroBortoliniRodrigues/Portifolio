@@ -70,5 +70,65 @@ let slideIndex = 0;
     setInterval(autoSlide, 8000);
 
     showSlides();  // Mostra o primeiro slide ao carregar a página
-  
-  
+
+
+    function submitForm() {
+      alert('Formulario Enviado!'); // Mensagem do alerta
+  }
+
+    function updateClock() {
+      const timezone = document.getElementById('timezone').value;
+      const options = { timeZone: timezone, hour: 'numeric', minute: 'numeric', second: 'numeric' };
+    
+      const formattedTime = new Intl.DateTimeFormat('default', options).format(new Date());
+      document.getElementById('clock').textContent = formattedTime;
+    }
+    
+    // Atualiza o relógio assim que a página é carregada
+    updateClock();
+
+
+    //Codigo da API de Tempo
+
+
+    document.getElementById('weatherForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const apiKey = '0ddf4dc551418b4e957dcebf7b0cf24f';
+      const city = document.getElementById('cityInput').value;
+      const endpoint = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+    
+      document.getElementById('loading').style.display = 'block';
+    
+      fetch(endpoint)
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('loading').style.display = 'none';
+          document.getElementById('city').textContent = data.name;
+          const temperatureCelsius = Math.round(data.main.temp - 273.15);
+          document.getElementById('temperature').textContent = `${temperatureCelsius}°C`;
+          document.getElementById('description').textContent = data.weather[0].description;
+    
+          // Selecionar o elemento com a classe weather-container
+          const weatherContainer = document.querySelector('.weather-container');
+    
+          // Verificar se a temperatura é superior a 30ºC
+          if (temperatureCelsius > 29) {
+            // Se sim, modificar o background image
+            weatherContainer.style.backgroundImage = 'url("Sol.jpg")';
+          } else if (temperatureCelsius < 15 && temperatureCelsius > -0) {
+            // Se sim, modificar o background image
+            weatherContainer.style.backgroundImage = 'url("Frio.jpeg")';
+          } else if (temperatureCelsius > 15 || temperatureCelsius < 30) {
+            // Se sim, modificar o background image
+            weatherContainer.style.backgroundImage = 'url("temperatura.jpg")';
+            } else {
+            // Caso contrário, restaurar o background image padrão
+            weatherContainer.style.backgroundImage = 'url("caminho/para/background/padrao.jpg")';
+          }
+        })
+        .catch(error => {
+          document.getElementById('loading').style.display = 'none';
+          console.error('Erro ao obter dados da API:', error);
+        });
+    });
+    

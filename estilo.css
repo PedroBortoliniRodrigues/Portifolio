@@ -33,9 +33,103 @@ body {
     width: auto;
     position: absolute;
     margin-top: 5%;
-    margin-left: 32%; /* Ajustando para uma unidade responsiva */
+    margin-left: 30%; /* Ajustando para uma unidade responsiva */
     font-size: 2vw; /* Ajustando para uma unidade responsiva */
 }
+
+
+/* Estilização da API de clima */
+.weather-container {
+    align-items: center;
+    width: min(20vw);
+    width: max(40vw);
+    display: flex;
+    flex-direction: column;
+    padding-top: 3vw;
+    border-radius: 5vw; /* Usando vw para manter proporção */
+    height: auto;
+    background-color: #fff;
+  }
+
+  #previsaodotempo{
+    font-size: 2.5vw;
+  }
+  
+  /* Adicionando estilos para os elementos filhos */
+  #weather-container form,
+  #weather-container div {
+    margin-bottom: 2vw; /* Usando vw para manter proporção */
+  }
+  
+  #city,
+  #temperature,
+  #description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #temperature {
+    font-size: 4vw;
+  }
+  
+  #description {
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    font-size: 3vw;
+  }
+  
+  #loading {
+    display: none;
+  }
+
+  /* Código de estilização do relógio */
+  #clock-container {
+    
+    width: min(40vw);
+    text-align: center;
+    background-color: #535754c0;
+    margin-top: 5vw;
+    margin-left: auto; /* Centraliza à direita */
+    padding: 2vw;
+    border-radius: 1vw;
+    font-size: 18pt;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border-style: groove;
+    
+  }
+  
+  #timezone {
+    padding: 0.6vw;
+    font-size: 16px;
+    border: 0.2vw solid #535754c0;
+    border-radius: 1vw;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  #timezone:hover {
+    background-color: #535754c0;
+  }
+  
+  #timezone:focus {
+    border-color: #4caf50;
+    background-color: #535754c0;
+    box-shadow: 0 0 1vw rgba(76, 175, 80, 0.7);
+  }
+  
+  label {
+    font-family: 'calibri light', Times, serif;
+    margin-bottom: 1vw;
+    color: #ffffff;
+  }
+  
+  #clock {
+    font-size: 3vw;
+    margin-top: 10px;
+  }
+
+
 
 #menu-h {
     display: flex;
@@ -92,6 +186,7 @@ body {
 }
 
 /* Estilos dos botões de navegação */
+
 #anterior {
     position: absolute;
     top: 50%;
@@ -116,7 +211,6 @@ body {
     background-color: #000000;
     border: none;
     cursor: pointer;
-    
 }
 
 
@@ -180,7 +274,7 @@ input {
     padding-left: 1vw; /* Ajustando para uma unidade responsiva */
     background-color: #4d4d4d;
     border-radius: 1vw;
-    padding-top: 1.5vw;
+    padding-top: 0.5vw;
 }
 
 .foto {
@@ -219,9 +313,10 @@ input {
 #contato{
 
     font-size: xx-large;
-    margin-left: 43% ;
+    margin-left: 43vw ;
     text-align: center; 
-    margin-top: 25vw; 
+    margin-top: 10vw; 
+    margin-bottom: 10vw;
     font-size: 2vw; 
     font-family: Arial, Helvetica, sans-serif; 
     color: aliceblue;
@@ -233,20 +328,107 @@ input {
 
     display: flex; 
     margin-top: 5%; 
-    margin-left: 45%;
+    margin-left: 43vw;
    
     
 
 }
 
-.musicplayer{
-
+.music-player {
     align-items: center;
     width: auto;
     display:flex;
     margin-left: 40vw;
-    padding-top: 5vw; /* Ajustando para uma unidade responsiva */
     border-radius: 10%;
     width: min(250px, 25vw);
     
+
 }
+
+
+
+audio {
+    margin-left: auto;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #00d9ff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button,
+audio::-webkit-media-controls-volume-slider {
+    background-color: #00d9ff;
+}
+
+audio::-webkit-media-controls-timeline {
+    background-color: #00d9ff;
+
+}
+
+
+.container {
+    margin-left: 28vw;
+    margin-bottom: 5vw;
+    padding: 2vw;
+    width: min(30vw);
+    width: max(40vw);
+    display: flex;
+    flex-direction: column;
+    padding-top: 3vw;
+    border-radius: 5vw; /* Usando vw para manter proporção */
+    height: auto;
+    background-color: #fff;
+    
+}
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    color: #000000;
+    margin-bottom: 5px;
+  }
+  
+
+  .nomeform{
+    font-size: 14px;
+    display: block;
+    width: 50%vw;
+    height: 2vw
+  }
+
+  .emailform{
+    font-size: 14px;
+    display: block;
+    width: 50%vw;
+    height: 2vw
+  }
+
+
+  textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1db954;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #25a55c;
+  }
+
